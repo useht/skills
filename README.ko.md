@@ -7,6 +7,7 @@ Claude Code 스킬을 내놓기 전에 세 가지로 잽니다 — 스킬을 켜
 | 스킬 | 하는 일 | 켬 | 원문을 받은 상대 | 차이(95% 구간) | 결과 |
 |---|---|---|---|---|---|
 | [plugin-eval-field-notes](plugins/plugin-eval-field-notes/) | `claude plugin eval` 을 돌리고 읽을 때 공식 문서에 없는 함정(Windows 셸, `-j` 동시 실행 때 비용 겹침, 판정관 결과, 켬/끔 팔 설계) | 0.825 | 0.183 | +0.64 [+0.54, +0.77] | 원문 상대를 이김 — 판정관 민감, 다른 공개 스킬과는 아직 안 견줌 |
+| plugin-eval-field-notes 대 [채움: 설치 1위 스킬·찾은 가장 강한 스킬] | 같은 일 | [채움] | [채움] | [채움] | [채움] |
 | kr-vat-filing · kr-payroll · eu-product-compliance | 부가세·4대보험·EU 리콜 | 1.000 · 1.000 · 0.838 | 0.976 · 1.000 · 0.928 | +0.02 · +0.00 · −0.09 | 되돌림 — 원문 상대를 넘지 못함 |
 
 관문 세트 값입니다(사례 5개 또는 7개 × 3회). 확인 세트와 두 판정관 표는 [benchmarks/](benchmarks/README.md)에 있습니다.
