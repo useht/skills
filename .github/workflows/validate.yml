@@ -20,6 +20,5 @@ jobs:
           claude plugin validate .
           for p in plugins/*/; do claude plugin validate "$p"; done
       - name: Secrets in history
-        uses: gitleaks/gitleaks-action@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # the gitleaks GitHub Action needs a paid key for organization repositories; the CLI image does not
+        run: docker run --rm -v "$PWD:/repo" zricethezav/gitleaks:latest git /repo --redact --verbose
