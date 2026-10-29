@@ -6,7 +6,7 @@ Measured 2026-10-29 with Claude Code 2.1.312. Cases, graders and the skill were 
 
 All arms: model `claude-sonnet-5-5`, no tool grant, 3 runs per case.
 
-- with — the plugin in [plugins/plugin-eval-field-notes](../../plugins/plugin-eval-field-notes/), invoked naturally (no `/name` in the prompt).
+- with — the plugin in [plugins/plugin-eval-field-notes](../../plugins/plugin-eval-field-notes/), invoked naturally (no `/name` in the prompt); the skill was invoked in 15 of 15 runs on each set.
 - without — same model, no plugin.
 - control — same model, no plugin, the documents in SOURCE.md appended after the request.
 
@@ -36,7 +36,7 @@ Judge-sensitive. Agreement between the two graders on criterion verdicts, per ru
 | `judges/*--opus.json` | the Opus regrade: per-criterion verdicts and agreement with the original grader |
 | `cases/gate/`, `cases/confirm/` | the registered cases: `prompt.md`, `graders/`, reference answer, provenance |
 
-Cost as printed by the tool (list-price estimate, overcounted under `-j` concurrency — the skill's own section 4): with/gate $17.13, control/gate $11.44, with/confirmation $18.21, control/confirmation $10.41. The Opus regrade was estimated at $117.04 in total.
+Cost as printed by the tool (list-price estimate, overcounted under `-j` concurrency — the skill's own section 4): with/gate $17.13, control/gate $11.44, with/confirmation $18.21, control/confirmation $10.41; after removing the concurrency overcount of the judge share, $8.19, $5.95, $7.70 and $5.55. The Opus regrade was reported at $117.04 in total, not corrected (no correction is available for that path), so it is an overestimate.
 
 ## Rerun
 
