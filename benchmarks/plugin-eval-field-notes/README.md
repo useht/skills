@@ -23,7 +23,7 @@ Paired per-case difference, case-cluster bootstrap 50,000 resamples (seed 202610
 | Opus (regrade of the same answers) | gate | 0.933 | 0.331 | 0.273 | +0.60 [+0.40, +0.83] | +0.66 [+0.44, +0.86] | +0.06 [+0.01, +0.15] |
 | Opus | confirmation | 0.956 | 0.676 | 0.562 | +0.28 [+0.19, +0.43] | +0.39 [+0.18, +0.59] | +0.11 [−0.06, +0.28] |
 
-Release rule, fixed before the runs: with − control has a lower bound above zero on both sets, under both graders. Met. No case was lost by the skill against the control under either grader.
+Win rule, fixed before the runs: with − control has a lower bound above zero on both sets, under both graders. Met. Comparison with other public skills for the same task is not run yet. No case was lost by the skill against the control under either grader.
 
 Judge-sensitive. Agreement between the two graders on criterion verdicts, per run: with/gate 0.907, control/gate 0.827, with/confirmation 0.833, control/confirmation 0.880. All four are below the 0.95 we set before these runs for not flagging a run (a threshold not yet validated). Most disagreements we saw in earlier runs were a Sonnet FAIL that Opus passed. Neither grader was checked against human labels.
 

@@ -8,14 +8,14 @@ Every skill here is measured in three arms on cases and graders committed before
 - Grader: the tool's LLM judge (Claude Sonnet). The same stored answers are then regraded by Claude Opus; a claim stands only if it holds under both.
 - Score: weighted share of graders passed per run, averaged per case. Differences are paired per case with a case-cluster bootstrap (50,000 resamples, seed 20261028) 95% interval.
 - Two case sets per skill, gate and confirmation, by different authors; the confirmation author does not see the gate set.
-- Release rule: with − control lower bound above zero on both sets under both graders. Runs where the two graders agree on fewer than 95% of criterion verdicts are marked judge-sensitive.
+- Win over the control: with − control lower bound above zero on both sets under both graders. Release also needs the skill to beat the strongest public skills for the same task, measured the same way. Runs where the two graders agree on fewer than 95% of criterion verdicts are marked judge-sensitive.
 
 ## All results
 
 | Skill | Date | Set | with | control | Δ with − control (95% CI) | Outcome |
 |---|---|---|---|---|---|---|
-| [plugin-eval-field-notes](plugin-eval-field-notes/README.md) | 2026-10-29 | gate | 0.825 | 0.183 | +0.64 [+0.54, +0.77] | passes (Opus: +0.60 [+0.40, +0.83]); judge-sensitive |
-| plugin-eval-field-notes | 2026-10-29 | confirmation | 0.848 | 0.593 | +0.26 [+0.15, +0.42] | passes (Opus: +0.28 [+0.19, +0.43]); judge-sensitive |
+| [plugin-eval-field-notes](plugin-eval-field-notes/README.md) | 2026-10-29 | gate | 0.825 | 0.183 | +0.64 [+0.54, +0.77] | beats the control (Opus: +0.60 [+0.40, +0.83]); judge-sensitive |
+| plugin-eval-field-notes | 2026-10-29 | confirmation | 0.848 | 0.593 | +0.26 [+0.15, +0.42] | beats the control (Opus: +0.28 [+0.19, +0.43]); judge-sensitive |
 | kr-vat-filing | 2026-10-28 | gate / confirmation | 1.000 / 1.000 | 0.976 / 0.942 | +0.02 / +0.06 | withdrawn ([REJECTED.md](REJECTED.md)) |
 | kr-payroll | 2026-10-28 | gate / confirmation | 1.000 / 0.978 | 1.000 / 0.990 | +0.00 / −0.01 | withdrawn |
 | eu-product-compliance | 2026-10-28 | gate / confirmation | 0.838 / 0.884 | 0.928 / 0.893 | −0.09 / −0.01 | withdrawn |
