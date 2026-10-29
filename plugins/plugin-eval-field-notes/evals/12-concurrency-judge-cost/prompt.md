@@ -1,0 +1,5 @@
+Our CI job runs `claude plugin eval . --trust-plugin --runs 3 --judge-model sonnet -j 8 --json results.json --no-publish --max-cost-usd 20` on a 7-case suite (Claude Code 2.1.312). The last three runs reported `costUsd` 15.43, 15.47 and 15.49, and the per-run judge cost values inside the JSON look far too large: a run with two `llm` graders shows a judge cost about 7x what I get from list price for six short sonnet calls.
+
+To check, I took a 2-case subset (same prompts, same two graders, same sonnet judge) and ran it twice. With `-j 1` the judge costs across the runs add up to $0.079; with `-j 2` the same work adds up to $0.147. The agent-run part of the cost was about the same both times.
+
+I need two things decided today: (a) the number we put in the README as "cost of one full suite run", with the per-case cost table that goes with it — can I use the 15.4x figures from the -j 8 runs? (b) whether to lower `--max-cost-usd` or `-j` so we stop overspending. Give me the decision with its reason, and the exact command line for whatever calibration run you want me to do before I publish anything.

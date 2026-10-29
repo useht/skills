@@ -1,0 +1,33 @@
+name: Counterexample
+description: A question where the skill does worse than the model without it, or than the model given the documents
+title: "[counterexample] <skill>: <one line>"
+labels: ["counterexample"]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: The question you asked (verbatim)
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What a correct answer must contain
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What the skill answered, and what the model without it (or with the documents) answered
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Claude Code version and model

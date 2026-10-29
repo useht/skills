@@ -1,0 +1,1616 @@
+{
+ "실행": "plugin-eval-field-notes/04-상대-base-source-확인-29e61f4",
+ "판정모델": "opus",
+ "모델": "claude-opus-5-5",
+ "날짜": "2026-10-29",
+ "판정 길": "claude plugin eval — the stored answer is laid down as seed.md and the second judge grades it as the focus file (no agent rerun)",
+ "표 수": 3,
+ "비용달러": 20.7778,
+ "일치율": 0.88,
+ "기준별 일치율": {
+  "claude-p-not-faithful": 1.0,
+  "no-judge-reasoning-stored": 1.0,
+  "reread-blind-both-arms": 1.0,
+  "script-dedupes-reply-once-per-run": 0.3333333333333333,
+  "seed-file-reproduction": 1.0,
+  "artifact-not-overspend": 1.0,
+  "calibration-command-j1": 1.0,
+  "global-counter-mechanism": 1.0,
+  "list-price-estimate-readme-label": 1.0,
+  "reject-j8-figures": 1.0,
+  "ablation-none-pair-natural-wout": 1.0,
+  "count-from-system-init": 1.0,
+  "leak-discard-delta": 1.0,
+  "no-force-flag-slash-route": 0.6666666666666666,
+  "regex-is-result-check": 0.6666666666666666,
+  "judges-ran-real-spend": 1.0,
+  "keep-temp-cleanup-named-folders": 1.0,
+  "remove-windowsapps-from-path": 1.0,
+  "split-pc-wout-linux-with-bubblewrap": 0.3333333333333333,
+  "windows-no-sandbox-flags-irrelevant": 1.0,
+  "delta-not-publishable": 1.0,
+  "drop-write-grant-both-arms-reply": 1.0,
+  "file-deliverable-target-source-file": 0.3333333333333333,
+  "grader-sees-only-last-message": 1.0,
+  "verify-at-three-runs": 0.6666666666666666
+ },
+ "못 셈": 0,
+ "이번 오류": {},
+ "items": [
+  {
+   "사례": "11-judge-votes-without-reasons",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "claude-p-not-faithful",
+   "무게": 2,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "11-judge-votes-without-reasons",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "no-judge-reasoning-stored",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "11-judge-votes-without-reasons",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "reread-blind-both-arms",
+   "무게": 2,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "11-judge-votes-without-reasons",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "script-dedupes-reply-once-per-run",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "11-judge-votes-without-reasons",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "seed-file-reproduction",
+   "무게": 1,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "11-judge-votes-without-reasons",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "claude-p-not-faithful",
+   "무게": 2,
+   "원래 표": [
+    false,
+    false,
+    true
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "11-judge-votes-without-reasons",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "no-judge-reasoning-stored",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "11-judge-votes-without-reasons",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "reread-blind-both-arms",
+   "무게": 2,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "11-judge-votes-without-reasons",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "script-dedupes-reply-once-per-run",
+   "무게": 3,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "11-judge-votes-without-reasons",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "seed-file-reproduction",
+   "무게": 1,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "11-judge-votes-without-reasons",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "claude-p-not-faithful",
+   "무게": 2,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "11-judge-votes-without-reasons",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "no-judge-reasoning-stored",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "11-judge-votes-without-reasons",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "reread-blind-both-arms",
+   "무게": 2,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "11-judge-votes-without-reasons",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "script-dedupes-reply-once-per-run",
+   "무게": 3,
+   "원래 표": [
+    true,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "11-judge-votes-without-reasons",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "seed-file-reproduction",
+   "무게": 1,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "12-concurrency-judge-cost",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "artifact-not-overspend",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "12-concurrency-judge-cost",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "calibration-command-j1",
+   "무게": 2,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "12-concurrency-judge-cost",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "global-counter-mechanism",
+   "무게": 3,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "12-concurrency-judge-cost",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "list-price-estimate-readme-label",
+   "무게": 1,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "12-concurrency-judge-cost",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "reject-j8-figures",
+   "무게": 2,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "12-concurrency-judge-cost",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "artifact-not-overspend",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "12-concurrency-judge-cost",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "calibration-command-j1",
+   "무게": 2,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "12-concurrency-judge-cost",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "global-counter-mechanism",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "12-concurrency-judge-cost",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "list-price-estimate-readme-label",
+   "무게": 1,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "12-concurrency-judge-cost",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "reject-j8-figures",
+   "무게": 2,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "12-concurrency-judge-cost",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "artifact-not-overspend",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "12-concurrency-judge-cost",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "calibration-command-j1",
+   "무게": 2,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "12-concurrency-judge-cost",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "global-counter-mechanism",
+   "무게": 3,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "12-concurrency-judge-cost",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "list-price-estimate-readme-label",
+   "무게": 1,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "12-concurrency-judge-cost",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "reject-j8-figures",
+   "무게": 2,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "13-forced-skill-arm-leak",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "ablation-none-pair-natural-wout",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "13-forced-skill-arm-leak",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "count-from-system-init",
+   "무게": 2,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "13-forced-skill-arm-leak",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "leak-discard-delta",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "13-forced-skill-arm-leak",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "no-force-flag-slash-route",
+   "무게": 1,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "13-forced-skill-arm-leak",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "regex-is-result-check",
+   "무게": 1,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "13-forced-skill-arm-leak",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "ablation-none-pair-natural-wout",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "13-forced-skill-arm-leak",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "count-from-system-init",
+   "무게": 2,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "13-forced-skill-arm-leak",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "leak-discard-delta",
+   "무게": 3,
+   "원래 표": [
+    false,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "13-forced-skill-arm-leak",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "no-force-flag-slash-route",
+   "무게": 1,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "13-forced-skill-arm-leak",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "regex-is-result-check",
+   "무게": 1,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "13-forced-skill-arm-leak",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "ablation-none-pair-natural-wout",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "13-forced-skill-arm-leak",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "count-from-system-init",
+   "무게": 2,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "13-forced-skill-arm-leak",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "leak-discard-delta",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "13-forced-skill-arm-leak",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "no-force-flag-slash-route",
+   "무게": 1,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "13-forced-skill-arm-leak",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "regex-is-result-check",
+   "무게": 1,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "14-windows-bash-grant-billed",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "judges-ran-real-spend",
+   "무게": 2,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "14-windows-bash-grant-billed",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "keep-temp-cleanup-named-folders",
+   "무게": 1,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "14-windows-bash-grant-billed",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "remove-windowsapps-from-path",
+   "무게": 1,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "14-windows-bash-grant-billed",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "split-pc-wout-linux-with-bubblewrap",
+   "무게": 3,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "14-windows-bash-grant-billed",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "windows-no-sandbox-flags-irrelevant",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "14-windows-bash-grant-billed",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "judges-ran-real-spend",
+   "무게": 2,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "14-windows-bash-grant-billed",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "keep-temp-cleanup-named-folders",
+   "무게": 1,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "14-windows-bash-grant-billed",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "remove-windowsapps-from-path",
+   "무게": 1,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "14-windows-bash-grant-billed",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "split-pc-wout-linux-with-bubblewrap",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "14-windows-bash-grant-billed",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "windows-no-sandbox-flags-irrelevant",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "14-windows-bash-grant-billed",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "judges-ran-real-spend",
+   "무게": 2,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "14-windows-bash-grant-billed",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "keep-temp-cleanup-named-folders",
+   "무게": 1,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "14-windows-bash-grant-billed",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "remove-windowsapps-from-path",
+   "무게": 1,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "14-windows-bash-grant-billed",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "split-pc-wout-linux-with-bubblewrap",
+   "무게": 3,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "14-windows-bash-grant-billed",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "windows-no-sandbox-flags-irrelevant",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "15-baseline-wrote-file-delta-inflated",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "delta-not-publishable",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "15-baseline-wrote-file-delta-inflated",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "drop-write-grant-both-arms-reply",
+   "무게": 2,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "15-baseline-wrote-file-delta-inflated",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "file-deliverable-target-source-file",
+   "무게": 2,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "15-baseline-wrote-file-delta-inflated",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "grader-sees-only-last-message",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "15-baseline-wrote-file-delta-inflated",
+   "쪽": "with",
+   "회차": 1,
+   "기준": "verify-at-three-runs",
+   "무게": 1,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "15-baseline-wrote-file-delta-inflated",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "delta-not-publishable",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "15-baseline-wrote-file-delta-inflated",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "drop-write-grant-both-arms-reply",
+   "무게": 2,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "15-baseline-wrote-file-delta-inflated",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "file-deliverable-target-source-file",
+   "무게": 2,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "15-baseline-wrote-file-delta-inflated",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "grader-sees-only-last-message",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "15-baseline-wrote-file-delta-inflated",
+   "쪽": "with",
+   "회차": 2,
+   "기준": "verify-at-three-runs",
+   "무게": 1,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "15-baseline-wrote-file-delta-inflated",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "delta-not-publishable",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "15-baseline-wrote-file-delta-inflated",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "drop-write-grant-both-arms-reply",
+   "무게": 2,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    false,
+    false,
+    false
+   ],
+   "답 같음": true,
+   "다시": false,
+   "설명": "judge votes: FAIL FAIL FAIL"
+  },
+  {
+   "사례": "15-baseline-wrote-file-delta-inflated",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "file-deliverable-target-source-file",
+   "무게": 2,
+   "원래 표": [
+    false,
+    false,
+    false
+   ],
+   "원래": false,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "15-baseline-wrote-file-delta-inflated",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "grader-sees-only-last-message",
+   "무게": 3,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  },
+  {
+   "사례": "15-baseline-wrote-file-delta-inflated",
+   "쪽": "with",
+   "회차": 3,
+   "기준": "verify-at-three-runs",
+   "무게": 1,
+   "원래 표": [
+    true,
+    true,
+    true
+   ],
+   "원래": true,
+   "표": [
+    true,
+    true,
+    true
+   ],
+   "답 같음": true,
+   "다시": true,
+   "설명": "judge votes: PASS PASS PASS"
+  }
+ ]
+}

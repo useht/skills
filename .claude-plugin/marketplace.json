@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "hyperteams",
+  "owner": {
+    "name": "HyperTeams"
+  },
+  "metadata": {
+    "description": "Claude Code skills measured three ways before release: with the skill, without it, and without it but given the documents the skill relies on.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "plugin-eval-field-notes",
+      "source": "./plugins/plugin-eval-field-notes",
+      "description": "Field-measured pitfalls of `claude plugin eval` that the official docs do not cover: Windows and cloud/CI runs, cost under concurrency, judge verdicts, results JSON, with/without and forced-invocation design, eval folder and grader format.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "development",
+      "keywords": ["claude-code", "agent-skills", "plugin-eval", "evals", "benchmark"]
+    }
+  ]
+}

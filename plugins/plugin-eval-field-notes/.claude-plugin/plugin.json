@@ -1,0 +1,11 @@
+{
+  "name": "plugin-eval-field-notes",
+  "version": "0.1.0",
+  "description": "Field-measured pitfalls of `claude plugin eval` that the official docs do not cover: Windows and cloud/CI runs, cost under concurrency, judge verdicts, results JSON, with/without and forced-invocation design, eval folder and grader format.",
+  "license": "MIT",
+  "author": {
+    "name": "HyperTeams"
+  },
+  "homepage": "https://github.com/useht/skills",
+  "repository": "https://github.com/useht/skills"
+}

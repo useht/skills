@@ -1,0 +1,33 @@
+name: Reproduction
+description: I reran a benchmark and got these numbers
+title: "[repro] <skill>: <set> <arm>"
+labels: ["reproduction"]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill and case set
+      placeholder: plugin-eval-field-notes, gate
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Exact command
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Claude Code version, model, judge model, OS
+      placeholder: 2.1.312, claude-sonnet-5-5, sonnet, Ubuntu 24.04
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Your numbers and how they differ from ours
+      description: Attach or paste aggregate-result.json if you can.
+    validations:
+      required: true
