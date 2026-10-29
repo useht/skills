@@ -41,7 +41,9 @@ Cost as printed by the tool (list-price estimate, overcounted under `-j` concurr
 ## Rerun
 
 ```
-claude plugin eval plugins/plugin-eval-field-notes --runs 3 --judge-model sonnet
+python benchmarks/plugin-eval-field-notes/rerun.py source            # docs page + CLI help -> rerun-out/source.md, hash checked
+python benchmarks/plugin-eval-field-notes/rerun.py run all --dry-run # print the four commands
+python benchmarks/plugin-eval-field-notes/rerun.py run all           # gate and confirmation, with/without and control
 ```
 
-gives the with/without arms on all ten cases (`plugins/plugin-eval-field-notes/evals/` holds the same prompts and graders as `cases/`). For the control arm, copy the cases, append the SOURCE.md documents to each `prompt.md`, and run with no plugin. The interval script is not published yet; the per-case scores are in the result JSON.
+`source` rebuilds the control's text in the measured layout; on 2026-10-29 with Claude Code 2.1.312 it matched the registered SHA-256 byte for byte, and the control prompts it builds are identical to the 10 measured ones. `run` calls `claude plugin eval` with the measured settings and writes raw JSON to `rerun-out/`. It does not compute intervals; the per-case scores are in the JSON. For the with/without arms alone, `claude plugin eval plugins/plugin-eval-field-notes --runs 3 --judge-model sonnet` also works (`evals/` holds the same prompts and graders as `cases/`).
